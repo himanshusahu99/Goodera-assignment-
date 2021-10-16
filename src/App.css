@@ -5,9 +5,7 @@
   background: rgb(7, 57, 90);
   /* min-width: 100%; */
 }
-/* .App {
-  display: flex;
-} */
+
 .Router {
   /* --routerWidth79%; */
   background: rgb(7, 57, 90);
@@ -17,7 +15,7 @@
   justify-content: space-between;
   position: relative;
   height: 50px;
-  width: 79%;
+  width: 69%;
   /* border-bottom: 2px solid black; */
 }
 .headerInRouter {
@@ -69,10 +67,14 @@
 .aside-outer {
   width: calc(100% - 79%);
   height: 100vh;
-  background: white;
+  background: rgb(24, 44, 73);
   position: fixed;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
+}
+
+.aside-outer h1 {
+  background: rgb(24, 44, 73);
 }
 .row-posters {
   display: grid;

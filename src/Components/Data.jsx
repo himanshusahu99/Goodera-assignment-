@@ -47,8 +47,8 @@ export default function Data({data, fetchURL, movies, setMovies}) {
                    movies?  movies.map((movie)=> {
                        return <><div className="class-for-row"> 
                          <img className = "row-poster" src={ `${base_url}${movie.poster_path}`} alt = {movie.name} /> 
-                         <h5>{movie.name} </h5> 
-                         <h5 style = { {color:"grey"}}>{movie.vote_average}/10 | { new Date(movie.first_air_date).getUTCFullYear()}</h5>
+                         <h5>{movie.name ? movie.name : movie.title} </h5> 
+                         <h5 style = { {color:"grey"}}>{movie.vote_average}/10 | { movie.release_date ? new Date(movie.release_date).getUTCFullYear() : new Date(movie.first_air_date).getUTCFullYear()}</h5>
                        
                          </div>
                          </>
