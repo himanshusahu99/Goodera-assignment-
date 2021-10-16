@@ -4,8 +4,8 @@ import axios from "../axios"
 
 const base_url = "https://image.tmdb.org/t/p/original/"
 
-export default function Data({data, fetchURL}) {
-     const[movies, setMovies] = useState([]); 
+export default function Data({data, fetchURL, movies, setMovies}) {
+     
      useEffect(()=>{
        
                async function fetchData() {
@@ -43,11 +43,11 @@ export default function Data({data, fetchURL}) {
                {/* <h1> this is {data}</h1> */}
                {
 
-                    movies.map((movie)=> {
+                   movies?  movies.map((movie)=> {
                        return <> 
-                         <img className = "row-Poster" src={ `${base_url}${movie.poster_path}`} alt = {movie.name} /> 
+                         <img className = "row-poster" src={ `${base_url}${movie.poster_path}`} alt = {movie.name} /> 
                          </>
-                    })
+                    }) : <h1>Loading...</h1>
                }
           </div>
      )

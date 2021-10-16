@@ -4,16 +4,16 @@ import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
 import Data from "./Data"
 import request from "../request"
 
-export default function Navbar({data, setData, setFetchURL}) {
+export default function Navbar({data, setData, setFetchURL, setMovies}) {
      return (
           <div className = "Router">
                <div className = "headerInRouter"><h1>Discover</h1> </div>
                <div className= "allLink">    
                <Router >
-                    <Link onClick={()=>{setData("popular"); setFetchURL(request.fetchNetflixOriginals)}} className = "linkRouiter" to = "/popular">POPULAR</Link>
-                    <Link onClick={()=>{setData("newest"); ; setFetchURL(request.fetchActionMovies)}} className = "linkRouiter" to = "/newest">NEWEST</Link>
-                    <Link onClick={()=>{setData("trending") ;setFetchURL(request.fetchTrending)}} className = "linkRouiter" to = "/trending">TRENDING</Link>
-                    <Link onClick={()=>{setData("toprated") ; setFetchURL(request.fetchTopRated)}} className = "linkRouiter" to = "/toprated">Top Rated</Link>
+                    <Link onClick={()=>{setData("popular"); setMovies(null); setFetchURL(request.fetchNetflixOriginals)}} className = "linkRouiter" to = "/popular">POPULAR</Link>
+                    <Link onClick={()=>{setData("newest"); setMovies(null); setFetchURL(request.fetchActionMovies)}} className = "linkRouiter" to = "/newest">NEWEST</Link>
+                    <Link onClick={()=>{setData("trending") ; setMovies(null); setFetchURL(request.fetchTrending)}} className = "linkRouiter" to = "/trending">TRENDING</Link>
+                    <Link onClick={()=>{setData("toprated") ; setMovies(null); setFetchURL(request.fetchTopRated)}} className = "linkRouiter" to = "/toprated">Top Rated</Link>
                     
                     
                  </Router>
