@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: rgb(7, 57, 90);
+  /* min-width: 100%; */
+}
+/* .App {
+  display: flex;
+} */
+.Router {
+  /* --routerWidth79%; */
+  background: rgb(7, 57, 90);
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 50px;
+  width: 79%;
+  /* border-bottom: 2px solid black; */
+}
+.headerInRouter {
+  /* font-size: 30px;
+  font-weight: bold; */
+  color: white;
+}
+.allLink {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+
+  /* width: 100%;  */
+  /* transform: translate(-50%, -50%); */
+}
+.linkRouiter {
+  /* background: green; */
+
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.linkRouiter:hover {
+  color: rgb(32, 124, 209);
+}
+.searchinHeader {
+  color: white;
+  padding: 20px;
+  height: 3px;
+  width: 250px;
+  border: 0px;
+  border-bottom: 5px solid grey;
+}
+
+.searchinHeader:hover {
+  border: 0px;
+  border-bottom: 5px solid rgb(19, 118, 175);
+}
+.searchinHeader:focus {
+  border: 0px;
+  outline: none;
+  border-bottom: 5px solid rgb(19, 118, 175);
+}
+
+.aside-outer {
+  width: calc(100% - 79%);
+  height: 100vh;
+  background: white;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+.row-posters {
+  display: grid;
+
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  justify-content: flex-end;
+  background: green;
+  margin-top: 50px;
+}
+.row-Poster {
+  width: 100%;
+  max-height: 250px;
+  margin-left: 20px;
+}
