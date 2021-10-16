@@ -84,7 +84,12 @@
   width: 79%;
 }
 .row-poster {
-  width: 90%;
-  max-height: 250px;
+  width: 70%;
+  max-height: 300px;
   margin: 20px;
+}
+
+.class-for-row {
+  color: rgb(30, 128, 167);
+  text-align: center;
 }
