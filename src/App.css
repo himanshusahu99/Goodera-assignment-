@@ -80,10 +80,22 @@ body {
 .aside-outer {
   width: calc(100% - 79%);
   height: 100vh;
+  padding: 20px;
   background: rgb(24, 44, 73);
   position: fixed;
   right: 0;
   top: 0;
+}
+.aside-outer h3,
+.aside-outer label,
+.aside-outer select {
+  font-weight: bold;
+  color: grey;
+  margin-top: 30px;
+}
+
+.aside-select {
+  margin-top: 30px;
 }
 
 /* .aside-outer h1 {
