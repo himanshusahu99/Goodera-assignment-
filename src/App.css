@@ -2,11 +2,14 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background: rgb(7, 57, 90);
+
   display: relative;
   /* min-width: 100%; */
 }
 
+body {
+  background: rgb(7, 57, 90);
+}
 .Router {
   /* --routerWidth79%; */
   background: rgb(7, 57, 90);
@@ -56,6 +59,7 @@
 }
 .searchinHeader {
   color: white;
+  background: rgb(7, 57, 90);
   padding: 30px;
   height: 3px;
   width: 250px;
@@ -82,12 +86,12 @@
   top: 0;
 }
 
-.aside-outer h1 {
+/* .aside-outer h1 {
   background: rgb(24, 44, 73);
-}
+} */
 .row-posters {
   display: grid;
-
+  background: rgb(7, 57, 90);
   grid-template-columns: 4fr 4fr 4fr 4fr;
   justify-content: flex-end;
   /* background: green; */
