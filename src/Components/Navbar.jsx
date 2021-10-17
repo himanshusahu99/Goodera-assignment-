@@ -10,10 +10,10 @@ export default function Navbar({data, setData, setFetchURL, setMovies}) {
                <div className = "headerInRouter"><h1>Discover</h1> </div>
                <div className= "allLink">    
                <Router >
-                    <Link onClick={()=>{setData("popular"); setMovies(null); setFetchURL(request.fetchNetflixOriginals)}} className = "linkRouiter" to = "/popular">POPULAR</Link>
-                    <Link onClick={()=>{setData("newest"); setMovies(null); setFetchURL(request.fetchActionMovies)}} className = "linkRouiter" to = "/newest">NEWEST</Link>
-                    <Link onClick={()=>{setData("trending") ; setMovies(null); setFetchURL(request.fetchTrending)}} className = "linkRouiter" to = "/trending">TRENDING</Link>
-                    <Link onClick={()=>{setData("toprated") ; setMovies(null); setFetchURL(request.fetchTopRated)}} className = "linkRouiter" to = "/toprated">Top Rated</Link>
+                    <Link  onClick={()=>{setData("popular"); setMovies(null); setFetchURL(request.fetchNetflixOriginals)}} className = {data == "popular" ? "linkRouiter active" : "linkRouiter"} to = "/popular">POPULAR</Link>
+                    <Link  onClick={()=>{setData("newest"); setMovies(null); setFetchURL(request.fetchActionMovies)}} className = {data == "newest" ? "linkRouiter active" : "linkRouiter"} to = "/newest">NEWEST</Link>
+                    <Link  onClick={()=>{setData("trending") ; setMovies(null); setFetchURL(request.fetchTrending)}} className = {data == "trending" ? "linkRouiter active" : "linkRouiter"} to = "/trending">TRENDING</Link>
+                    <Link  onClick={()=>{setData("toprated") ; setMovies(null); setFetchURL(request.fetchTopRated)}} className = {data == "toprated" ? "linkRouiter active" : "linkRouiter"} to = "/toprated">TOP RATED</Link>
                     
                     
                  </Router>

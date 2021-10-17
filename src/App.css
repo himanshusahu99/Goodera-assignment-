@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   background: rgb(7, 57, 90);
+  display: relative;
   /* min-width: 100%; */
 }
 
@@ -36,27 +37,35 @@
 
   margin-left: 10px;
   text-decoration: none;
-  color: white;
+  color: rgb(16, 103, 161);
   text-align: center;
   display: inline-block;
   font-weight: bold;
 }
 
 .linkRouiter:hover {
-  color: rgb(32, 124, 209);
+  color: rgb(15, 82, 145);
+}
+
+.active {
+  color: white;
+}
+
+.active:hover {
+  color: grey;
 }
 .searchinHeader {
   color: white;
-  padding: 20px;
+  padding: 30px;
   height: 3px;
   width: 250px;
   border: 0px;
-  border-bottom: 5px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 .searchinHeader:hover {
   border: 0px;
-  border-bottom: 5px solid rgb(19, 118, 175);
+  border-bottom: 2px solid rgb(19, 118, 175);
 }
 .searchinHeader:focus {
   border: 0px;
@@ -94,4 +103,15 @@
 .class-for-row {
   color: rgb(30, 128, 167);
   text-align: center;
+}
+
+.loading {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+
+  top: 50%;
+  left: 39%;
+  transform: translate(-50%, -50%);
 }
