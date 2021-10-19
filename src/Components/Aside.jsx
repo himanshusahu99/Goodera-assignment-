@@ -10,7 +10,7 @@ export default function Aside() {
                <h3>Discover Options</h3>
                <div className="aside-select">
                <label > TYPE </label> <br/>
-               <select>
+               <select className="select-full">
                     <option value="movies">Movies</option>
                     <option value="tvseries">TV series</option>
                </select>
@@ -22,17 +22,17 @@ export default function Aside() {
                     <option value="Drama">Drama</option>
                     <option value="Comedy">Comedy</option>
                     <option value="Thriller">Thriller</option>
-               </select> <br/>
+               </select> <br/><br/>
 
-               <label > YEAR </label> 
-               <select>
+               <label > YEAR </label> <br/>
+               <select style={{width:"100px "}}>
                    {
                         year.map(element=><option>{element}</option>)
                         
                    }
                </select> 
-               ---
-               <select>
+               <span style={{color: 'white'}}> -- </span>
+               <select style={{width:"100px "}}>
                    {
                         year.map(element=><option>{element}</option>)
                         

@@ -3,9 +3,11 @@ import '../App.css';
 import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
 import Data from "./Data"
 import request from "../request"
-
+import { FiSearch } from "react-icons/fi";
+const style = { color: "grey", }
 export default function Navbar({data, setData, setFetchURL, setMovies}) {
      return (
+          <>
           <div className = "Router">
                <div className = "headerInRouter"><h1>Discover</h1> </div>
                <div className= "allLink">    
@@ -18,9 +20,11 @@ export default function Navbar({data, setData, setFetchURL, setMovies}) {
                     
                  </Router>
                  </div>
+                
 
-               <div className="search"><input className="searchinHeader" type="text"/> </div>
-          </div> 
+               <div className="search">< FiSearch style={style}/><input className="searchinHeader" type="text" placeholder="Search" /> </div>
+               </div> 
+          </>
      )
 }
 
